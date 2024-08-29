@@ -1,8 +1,8 @@
 {
-    "token": "",
+    "token": "MTI0MzIzOTE3MTU5NDc4MDgzNA.GD-__v.GN3OeOy0akzK6CtsLB7pv-VKR5HOCP2Em3ZxUg",
     "language": "en",
-    "prefix": "!",
-    "mongodbUri": "",
+    "prefix": "*",
+    "mongodbUri": "mongodb+srv://atrone764:5UXCODpgr6C7RTpL@atrone.hvxe3ua.mongodb.net",
     "geniusToken": "0CHr9jtPjR7EKraXUVv6__8ELmEwFeUwt5vYAhk-is_fGOq-10-epdMzESkMPUnf",
     "excessCommands": {
         "utility": true,
