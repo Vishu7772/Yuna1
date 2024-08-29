@@ -6,10 +6,10 @@ module.exports = {
         .setName('support')
         .setDescription(lang.supportDescription),
     async execute(interaction) {
-        const supportServerLink = lang.supportServerLink;
-        const githubLink = lang.githubLink;
-        const replitLink = lang.replitLink;
-        const youtubeLink = lang.youtubeLink;
+        const supportServerLink = "https://discord.com/invite/ACgH3AUzcq";
+        const githubLink = "github.com";
+        const replitLink = "replict.com";
+        const youtubeLink = "https://youtube.com/@atrone5980?si=6erbS9nKlt2cAwG7";
 
         const embed = new EmbedBuilder()
             .setColor('#b300ff')
