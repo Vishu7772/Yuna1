@@ -123,7 +123,7 @@ module.exports = {
                             `**Usage : **Both Slash commands and Prefix\n\n` +
                             `${category.charAt(0).toUpperCase() + category.slice(1)} related commands`,
                         commands: commands.map(command => `\`\`${command}\`\``),
-                        ima
+                    
                         color: "#3498db",
                         
                         author: {
