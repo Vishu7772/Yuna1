@@ -84,7 +84,7 @@ module.exports = {
                     title: 'Bot Information',
                     description: `Welcome to the help command! This bot provides a variety of commands to enhance your server experience. Below are the categories and the number of commands available in each.`,
                     commands: [
-                        `**💜 Bot Developer:** GlaceYT\n`+
+                        `**💜 Bot Developer:** Atrone\n`+
                         `**Bot Version:** 1.0.0\n`+
                         `**Total Servers:** ${totalServers}\n`+
                         `**Total Members:** ${totalMembers}\n`+
@@ -93,13 +93,13 @@ module.exports = {
                         `**Enabled Categories:** ${enabledCategoriesList.join(', ')}\n`+
                         `**Disabled Categories:** ${disabledCategoriesList.join(', ')}\n`,
                     ],
-                    image: "https://cdn.discordapp.com/attachments/1264134884432285766/1270352605154902151/GlaceYT.gif?ex=66b3638f&is=66b2120f&hm=23878b54affd61573b105db7c1c016eb730911dc762b3fbabac5a32cbc884119&",
+                    image: "https://cdn.discordapp.com/attachments/1242495286023028941/1278614475112448000/images_9.jpg?ex=66d17206&is=66d02086&hm=a8f544e6ae09cc55fd69f03eb65f78ec312f18c9a7a27fd28aa9fb5d30f072a8&",
                     color: "#3498db",
-                    thumbnail: "https://cdn.discordapp.com/attachments/1264134884432285766/1270353776489922651/s_removed.png?ex=66b364a6&is=66b21326&hm=2d4ded259b57f476c901c58401e1d6faba2653c0a964ee1c4f371ecf3da52100&",
+                    thumbnail: "https://cdn.discordapp.com/attachments/1242495286023028941/1278614475112448000/images_9.jpg?ex=66d17206&is=66d02086&hm=a8f544e6ae09cc55fd69f03eb65f78ec312f18c9a7a27fd28aa9fb5d30f072a8&",
                     author: {
                         name: 'All In One',
-                        iconURL: "https://cdn.discordapp.com/attachments/1246408947708072027/1255167194036437093/1558-zerotwo-exciteddance.gif?ex=667c250a&is=667ad38a&hm=09e6db36fd79436eb57de466589f21ca947329edd69b8e591d0f6586b89df296&",
-                        url: "https://discord.gg/xQF9f9yUEM"
+                        iconURL: "https://cdn.discordapp.com/attachments/1242495286023028941/1278614475112448000/images_9.jpg?ex=66d17206&is=66d02086&hm=a8f544e6ae09cc55fd69f03eb65f78ec312f18c9a7a27fd28aa9fb5d30f072a8&",
+                        url: "https://discord.com/invite/ACgH3AUzcq"
                     }
                 });
 
@@ -129,7 +129,7 @@ module.exports = {
                         author: {
                             name: `${category.charAt(0).toUpperCase() + category.slice(1)} Commands`,
                             iconURL: "",
-                            url: "https://discord.gg/xQF9f9yUEM"
+                            url: "https://discord.com/invite/ACgH3AUzcq"
                         }
                     };
 
