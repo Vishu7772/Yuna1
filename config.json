@@ -2,7 +2,7 @@
     "token": "",
     "language": "en",
     "prefix": "*",
-    "mongodbUri": "mongodb+srv://atrone764:5UXCODpgr6C7RTpL@atrone.hvxe3ua.mongodb.net",
+    "mongodbUri": "mongodb+srv://atrone764:Adityaloser1@atrone.hvxe3ua.mongodb.net/?retryWrites=true&w=majority&appName=Atrone",
     "geniusToken": "0CHr9jtPjR7EKraXUVv6__8ELmEwFeUwt5vYAhk-is_fGOq-10-epdMzESkMPUnf",
     "excessCommands": {
         "utility": true,
