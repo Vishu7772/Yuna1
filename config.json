@@ -7,17 +7,17 @@
     "excessCommands": {
         "utility": true,
         "other": true,
-        "hentai": false,
+        "hentai": true,
         "lavalink": true,
         "troll": true
     },
     "categories": {
-        "anime": false,
+        "anime": true
         "basic": true,
         "utility": true,
         "moderation": true,
         "fun": true,
-        "distube music": true,
+        "distube music": false,
         "setups": true
     },
     "lavalink": {
