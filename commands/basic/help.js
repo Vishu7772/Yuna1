@@ -93,7 +93,7 @@ module.exports = {
                         `**Enabled Categories:** ${enabledCategoriesList.join(', ')}\n`+
                         `**Disabled Categories:** ${disabledCategoriesList.join(', ')}\n`,
                     ],
-                    image: "https://cdn.discordapp.com/attachments/1242495286023028941/1278623033141100635/images_10.jpg?ex=66d179fe&is=66d0287e&hm=0b52a7560926dc2a3e66f4fd852ea1c08c97a88f406de4746267535097f68c49&",
+                    
                     color: "#3498db",
                 
                     author: {
