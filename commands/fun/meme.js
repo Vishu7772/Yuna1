@@ -32,7 +32,7 @@ module.exports = {
 
     async executePrefix(message) {
         const memeError = lang.memeError;
-        const apiUrl = 'https://www.reddit.com/r/memes/random/.json';
+        const apiUrl = 'https://meme-api.com/gimme';
 
         try {
             const response = await axios.get(apiUrl);
