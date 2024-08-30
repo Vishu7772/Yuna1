@@ -29,7 +29,7 @@ const loadEventHandlers = () => {
     require('./events/music')(client);
     require('./shiva');
 };
-const NoPrefixSchema = require('./Schemas.js/noPrefixSchema'
+const NoPrefixSchema = require('./noPrefixSchema.js'
 
 client.on('messageCreate', async message => {
 
