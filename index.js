@@ -28,6 +28,6 @@ const loadEventHandlers = () => {
     emojiHandler(client);
     require('./events/music')(client);
     require('./shiva');
-
+};
 
 loadEventHandlers();
