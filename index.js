@@ -29,6 +29,59 @@ const loadEventHandlers = () => {
     require('./events/music')(client);
     require('./shiva');
 };
+const NoPrefixSchema = require('./Schemas.js/noPrefixSchema'
 
+client.on('messageCreate', async message => {
+
+if (message.author.bot) return;
+
+I
+
+const noPrefixUser = await noPrefixSchema.findOne({ userId: message.author.
+
+id });
+
+let command, args;
+
+if (noPrefixUser) {
+
+const messageArray message.content.trim().split(/+/);
+
+command = messageArray.shift().toLowerCase();
+
+args = messageArray;
+    if (noPrefixUser) {
+
+const messageArray = message.content.trim().split(/+/);
+
+command = messageArray.shift().toLowerCase();
+
+args = messageArray;
+
+} else {
+
+const prefix = '*';
+
+if (Imessage.content.startsWith(prefix)) return;
+
+args = message.content.slice(prefix.length).trim().split(/+/);
+
+command = args.shift().toLowerCase();
+
+}
+
+const prefixcmd = client.prefix.get(command) || Array.from(client.prefix.
+
+values()).find((cmd) => cmd.aliases && cmd.aliases.includes (command));
+    const prefixcmd = client.prefix.get(command) || Array.from(client.prefix.
+
+values()).find((cmd) => cmd.aliases && cmd.aliases.includes (command));
+
+I
+
+if (prefixcmd) {
+
+prefixcmd.run(client, message, args);
+});
 
 loadEventHandlers();
