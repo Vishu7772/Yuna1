@@ -1,15 +1,14 @@
 const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require('discord.js');
 const cmdIcons = require('../../UI/icons/commandicons');
 const lang = require('../../events/loadLanguage');
-const port = process.env.PORT || 1000;
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('kick')
-        .setDescription(lang.kickCommandDescription)
+        .setName('fuckoff')
+        .setDescription(lang.fuckoffCommandDescription)
         .addUserOption(option =>
             option.setName('target')
-                .setDescription(lang.kickTargetDescription)
+                .setDescription(lang.fuckoffTargetDescription)
                 .setRequired(true))
         .setDefaultMemberPermissions(PermissionFlagsBits.KickMembers),
     async execute(interaction) {
@@ -17,7 +16,7 @@ module.exports = {
             if (!interaction.member.permissions.has(PermissionFlagsBits.KickMembers)) {
                 const embed = new EmbedBuilder()
                     .setColor('#ff0000')
-                    .setDescription(lang.kickNoPermission);
+                    .setDescription(lang.fuckNoPermission);
                 return interaction.reply({ embeds: [embed], ephemeral: true });
             }
 
@@ -27,24 +26,24 @@ module.exports = {
             if (!member.kickable) {
                 const embed = new EmbedBuilder()
                     .setColor('#ff0000')
-                    .setDescription(lang.kickCannotKick.replace('${target.tag}', target.tag));
+                    .setDescription(lang.fuckCannotfuck.replace('${target.tag}', target.tag));
                 return interaction.reply({ embeds: [embed], ephemeral: true });
             }
 
             await member.kick();
             const embed = new EmbedBuilder()
                 .setColor('#00ff00')
-                .setDescription(lang.kickSuccess.replace('${target.tag}', target.tag));
+                .setDescription(lang.fuckSuccess.replace('${target.tag}', target.tag));
             await interaction.reply({ embeds: [embed] });
         } else {
             const embed = new EmbedBuilder()
                 .setColor('#3498db')
                 .setAuthor({ 
-                    name: lang.kickAlert, 
+                    name: lang.fuckoffAlert, 
                     iconURL: cmdIcons.dotIcon,
-                    url: "https://discord.gg/xQF9f9yUEM"
+                    url: "https://discord.com/invite/ACgH3AUzcq"
                 })
-                .setDescription(lang.kickOnlySlashCommand)
+                .setDescription(lang.fuckOnlySlashCommand)
                 .setTimestamp();
 
             await interaction.reply({ embeds: [embed] });
