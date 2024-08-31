@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require('discord.js');
 const cmdIcons = require('../../UI/icons/commandicons');
 const lang = require('../../events/loadLanguage');
+const port = process.env.PORT || 4000;
 
 module.exports = {
     data: new SlashCommandBuilder()
