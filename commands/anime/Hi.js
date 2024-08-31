@@ -4,23 +4,23 @@ const anime = require('anime-actions');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('hi')
-        .setDescription('Wave someone!')
+        .setName('kick')
+        .setDescription('kick someone!')
         .addUserOption(option => 
             option.setName('user')
-                .setDescription('The user to punch')
+                .setDescription('The user to kick')
                 .setRequired(true)),
     async execute(interaction) {
         if (interaction.isCommand && interaction.isCommand()) {
             // Slash command execution
             const sender = interaction.user;
             const slappedUser = interaction.options.getUser('user');
-            const hiGif = await anime.punch();
+            const kickGif = await anime.kick();
 
             const embed = new EmbedBuilder()
                 .setColor('#ffcc00')
-                .setDescription(`${sender} is waving ${slappedUser}! 👋`)
-                .setImage(hiGif)
+                .setDescription(`${sender} is kicking ${slappedUser}! 👋`)
+                .setImage(kickGif)
                 .setTimestamp();
 
             await interaction.reply({ embeds: [embed] });
@@ -28,12 +28,12 @@ module.exports = {
             // Prefix command execution
             const sender = interaction.author;
             const targetUser = interaction.mentions.users.first();
-            const hiGif = await anime.hi();
+            const hiGif = await anime.kick();
 
             const embed = new EmbedBuilder()
                 .setColor('#ffcc00')
-                .setDescription(`${sender} is waving ${targetUser || 'the air'}! 👋`)
-                .setImage(hiGif);
+                .setDescription(`${sender} is kicking ${targetUser || 'the air'}! 👋`)
+                .setImage(kickGif);
 
             interaction.reply({ embeds: [embed] });
         }
