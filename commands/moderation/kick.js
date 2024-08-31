@@ -4,7 +4,7 @@ const lang = require('../../events/loadLanguage');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('kick')
+        .setName('fuckoff')
         .setDescription(lang.kickCommandDescription)
         .addUserOption(option =>
             option.setName('target')
