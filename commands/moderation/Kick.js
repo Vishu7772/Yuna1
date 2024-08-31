@@ -4,11 +4,11 @@ const lang = require('../../events/loadLanguage');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('fuckoff')
-        .setDescription(lang.fuckoffCommandDescription)
+        .setName('kick')
+        .setDescription(lang.kickCommandDescription)
         .addUserOption(option =>
             option.setName('target')
-                .setDescription(lang.fuckoffTargetDescription)
+                .setDescription(lang.kickTargetDescription)
                 .setRequired(true))
         .setDefaultMemberPermissions(PermissionFlagsBits.KickMembers),
     async execute(interaction) {
@@ -16,7 +16,7 @@ module.exports = {
             if (!interaction.member.permissions.has(PermissionFlagsBits.KickMembers)) {
                 const embed = new EmbedBuilder()
                     .setColor('#ff0000')
-                    .setDescription(lang.fuckNoPermission);
+                    .setDescription(lang.kickNoPermission);
                 return interaction.reply({ embeds: [embed], ephemeral: true });
             }
 
@@ -26,24 +26,24 @@ module.exports = {
             if (!member.kickable) {
                 const embed = new EmbedBuilder()
                     .setColor('#ff0000')
-                    .setDescription(lang.fuckCannotfuck.replace('${target.tag}', target.tag));
+                    .setDescription(lang.kickCannotKick.replace('${target.tag}', target.tag));
                 return interaction.reply({ embeds: [embed], ephemeral: true });
             }
 
             await member.kick();
             const embed = new EmbedBuilder()
                 .setColor('#00ff00')
-                .setDescription(lang.fuckSuccess.replace('${target.tag}', target.tag));
+                .setDescription(lang.kickSuccess.replace('${target.tag}', target.tag));
             await interaction.reply({ embeds: [embed] });
         } else {
             const embed = new EmbedBuilder()
                 .setColor('#3498db')
                 .setAuthor({ 
-                    name: lang.fuckoffAlert, 
+                    name: lang.kickAlert, 
                     iconURL: cmdIcons.dotIcon,
-                    url: "https://discord.com/invite/ACgH3AUzcq"
+                    url: "https://discord.gg/xQF9f9yUEM"
                 })
-                .setDescription(lang.fuckOnlySlashCommand)
+                .setDescription(lang.kickOnlySlashCommand)
                 .setTimestamp();
 
             await interaction.reply({ embeds: [embed] });
