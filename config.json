@@ -17,7 +17,7 @@
         "utility": true,
         "moderation": true,
         "fun": true,
-        "distube music": false,
+        "distube music": true,
         "setups": true
     },
     "lavalink": {
@@ -28,7 +28,7 @@
             "reconnectTimeout": 5000,
 
 "reconnectTries": "Infinity",
-            "secure": true
+            "secure": false
         }
     },
     "spotifyClientId": "f71a3da30e254962965ca2a89d6f74b9",
