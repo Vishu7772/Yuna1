@@ -2,10 +2,6 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { EmbedBuilder } = require('discord.js');
 const lang = require('../../events/loadLanguage');
 
-
-
-
-
 ```js
 
 module.exports = {
