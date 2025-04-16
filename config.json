@@ -1,8 +1,8 @@
 {
     "token": "",
     "language": "en",
-    "prefix": "!",
-    "mongodbUri": "",
+    "prefix": "*",
+    "mongodbUri": "mongodb+srv://atrone764:Adityaloser1@atrone.hvxe3ua.mongodb.net/?retryWrites=true&w=majority&appName=Atrone",
     "excessCommands": {
         "utility": true,
         "other": true,
