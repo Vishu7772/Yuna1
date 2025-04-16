@@ -15,7 +15,7 @@ module.exports = {
             // Constants for styling
             const BOT_ICON = "https://cdn.discordapp.com/emojis/1334648756649590805.png";
             const EMBED_COLOR = "#5865F2"; // Discord blurple for a more modern look
-            const FOOTER_TEXT = "All In One | The Discord Operating System • Created by GlaceYT";
+            const FOOTER_TEXT = "All In One | The Discord Operating System • Created by atrone77";
             const COMMANDS_DIR = path.join(__dirname, '../../commands');
             const EXCESS_COMMANDS_DIR = path.join(__dirname, '../../excesscommands');
 
